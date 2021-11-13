@@ -14,7 +14,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E171F3;
+  background-color: #C569E3;
   width: 60%;
 }
 
@@ -22,7 +22,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E489F2;
+  background-color: #DA88F5;
   width: 20%;
 }
 
@@ -46,5 +46,50 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
+}
+
+.classic-button,
+.difficult-button {
+  color: white;
+  border: 0px solid #CBC9CF;
+  background-color: #AE4ECE;
+}
+
+.difficult-button {
   margin-top: 50px;
+}
+
+.human-wins,
+.computer-wins {
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.cyg-title {
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.classic-game-instructions {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.difficult-game-instructions {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.game-titles {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.side-section-titles {
+  font-weight: 300;
 }
