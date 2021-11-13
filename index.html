@@ -8,12 +8,13 @@
   </head>
   <body>
     <main>
-      <section class="landing-page-start-view">
+      <section class="main-view">
         <section class="human-section">
           <div class="side-sections">
             <img class="people-pic" src="assets/people.png">
             <h2 class="side-section-titles">Human</h2>
             <p class="human-wins">Wins: 0</p>
+            <button class="change-game-button hidden">CHANGE GAME?</button>
           </div>
         </section>
         <section class="selection-section">
@@ -21,63 +22,44 @@
             <h1 style="font-size: 50px;">Rock, Paper, Scissors</h1>
             <h2 class="choose-your-game-title" style="font-size: 20px;">Choose your game!</h2>
           </div>
-          <div class="middle-section-bottom">
-            <button class="classic-button">
-              <h3 class="game-titles">
-                <img class="mini-imgs" src="assets/rock.png"> CLASSIC <img class="mini-imgs" src="assets/lines-scissors.png">
-              </h3>
-              <div class="classic-game-instructions">
-                <p>rock > scissors</p>
-                <p>paper > rock</p>
-                <p>scissors > paper</p>
-              </div>
-            </button>
-            <button class="difficult-button">
-              <h3 class="game-titles">
-                <img class="mini-imgs" src="assets/flat-lizard.png"> DIFFICULT <img class="mini-imgs" src="assets/flat-alien.png">
-              </h3>
-              <div class="difficult-game-instructions">
-                <p>rock > scissors & lizard</p>
-                <p>paper > rock & alien</p>
-                <p>scissors > paper & lizard</p>
-                <p>lizard > paper & alien</p>
-                <p>alien > scissors & rock</p>
-              </div>
-            </button>
-          </div>
-        </section>
-        <section class="computer-section">
-          <div class="side-sections">
-            <img class="keyboard-pic" src="assets/keyboard.png">
-            <h2 class="side-section-titles">Computer</h2>
-            <p class="computer-wins">Wins: 0</p>
-          </div>
-        </section>
-      </section>
-      <section class="choose-fighter-page-view hidden">
-        <section class="human-section">
-          <div class="side-sections">
-            <img class="people-pic" src="assets/people.png">
-            <h2 class="side-section-titles">Human</h2>
-            <p class="human-wins">Wins: 0</p>
-            <button class="change-game-button">CHANGE GAME?</button>
-          </div>
-        </section>
-        <section class="selection-section">
-          <div class="middle-section-top">
-            <h1 style="font-size: 50px;">Rock, Paper, Scissors</h1>
-            <h2 class="choose-your-fighter-title" style="font-size: 20px;">Choose your fighter!</h2>
+          <div class="middle-section-bottom-start">
+            <div class="start-buttons">
+              <button class="classic-button">
+                <h3 class="game-titles">
+                  <img class="mini-imgs" src="assets/rock.png"> CLASSIC <img class="mini-imgs" src="assets/lines-scissors.png">
+                </h3>
+                <div class="classic-game-instructions">
+                  <p>rock > scissors</p>
+                  <p>paper > rock</p>
+                  <p>scissors > paper</p>
+                </div>
+              </button>
+              <button class="difficult-button">
+                <h3 class="game-titles">
+                  <img class="mini-imgs" src="assets/flat-lizard.png"> DIFFICULT <img class="mini-imgs" src="assets/flat-alien.png">
+                </h3>
+                <div class="difficult-game-instructions">
+                  <p>rock > scissors & lizard</p>
+                  <p>paper > rock & alien</p>
+                  <p>scissors > paper & lizard</p>
+                  <p>lizard > paper & alien</p>
+                  <p>alien > scissors & rock</p>
+                </div>
+              </button>
+            </div>
           </div>
           <div class="middle-section-bottom-fighter">
-            <button class="rock-button">
-            <img class="rock-pic" src="assets/happy-rocks.png">
-            </button>
-            <button class="paper-button">
-              <img class="paper-pic" src="assets/happy-paper.png">
-            </button>
-            <button class="scissors-button">
-              <img class="scissor-pic" src="assets/happy-scissors.png">
-            </button>
+            <div class="fighter-buttons hidden">
+              <button class="rock-button">
+              <img class="rock-pic" src="assets/happy-rocks.png">
+              </button>
+              <button class="paper-button">
+                <img class="paper-pic" src="assets/happy-paper.png">
+              </button>
+              <button class="scissors-button">
+                <img class="scissor-pic" src="assets/happy-scissors.png">
+              </button>
+            </div>
           </div>
         </section>
         <section class="computer-section">
@@ -89,5 +71,7 @@
         </section>
       </section>
     </main>
+    <script type="text/javascript" src="main.js">
+    </script>
   </body>
 </html>

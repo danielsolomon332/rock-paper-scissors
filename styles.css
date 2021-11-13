@@ -3,10 +3,13 @@
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Body */
 
-.landing-page-start-view,
-.choose-fighter-page-view {
+.main-view {
   display: flex;
   height: 100vh;
 }
@@ -54,7 +57,7 @@
   color: white;
 }
 
-.middle-section-bottom {
+.start-buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,6 +73,14 @@
 
 .difficult-button {
   margin-top: 50px;
+}
+
+.change-game-button {
+  color: white;
+  background-color: #9D32C0;
+  border: 0px;
+  margin-top: 70px;
+  padding: 10px;
 }
 
 .human-wins,
@@ -114,7 +125,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 140px;
+}
+
+.fighter-buttons {
+  margin-top: 150px;
 }
 
 .rock-button,
@@ -129,12 +143,4 @@
 .scissor-pic {
   width: 180px;
   height: 180px;
-}
-
-.change-game-button {
-  color: white;
-  background-color: #9D32C0;
-  border: 0px;
-  margin-top: 70px;
-  padding: 10px;
 }
