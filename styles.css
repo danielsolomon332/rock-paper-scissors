@@ -5,9 +5,21 @@
 
 /* Body */
 
-main {
+.landing-page-start-view,
+.choose-fighter-page-view {
   display: flex;
   height: 100vh;
+}
+
+.people-pic,
+.keyboard-pic {
+  width: 30px;
+  height: 30px;
+}
+
+.mini-imgs {
+  width: 15px;
+  height: 15px;
 }
 
 .selection-section {
@@ -15,7 +27,7 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #C569E3;
-  width: 60%;
+  width: 70%;
 }
 
 .human-section, .computer-section {
@@ -23,7 +35,7 @@ main {
   flex-direction: column;
   align-items: center;
   background-color: #DA88F5;
-  width: 20%;
+  width: 15%;
 }
 
 .side-sections {
@@ -62,24 +74,25 @@ main {
 
 .human-wins,
 .computer-wins {
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 300;
 }
 
-.cyg-title {
+.choose-your-game-title,
+.choose-your-fighter-title {
   font-weight: 300;
   margin-top: 5px;
 }
 
 .classic-game-instructions {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 25px;
   margin-left: 44px;
   margin-right: 44px;
 }
 
 .difficult-game-instructions {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 25px;
   margin-left: 20px;
   margin-right: 20px;
@@ -91,5 +104,37 @@ main {
 }
 
 .side-section-titles {
+  margin-top: 10px;
   font-weight: 300;
+}
+
+/* FIGHTER VIEW */
+
+.middle-section-bottom-fighter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 140px;
+}
+
+.rock-button,
+.paper-button,
+.scissors-button {
+  border: 0px;
+  background-color: transparent;
+}
+
+.rock-pic,
+.paper-pic,
+.scissor-pic {
+  width: 180px;
+  height: 180px;
+}
+
+.change-game-button {
+  color: white;
+  background-color: #9D32C0;
+  border: 0px;
+  margin-top: 70px;
+  padding: 10px;
 }
