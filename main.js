@@ -1,12 +1,13 @@
 // QUERY SELECTORS //
 var gameSelectionView = document.querySelector('.middle-section-bottom-start');
-var fighterBtns = document.querySelector('.fighter-buttons');
-var classicBtn = document.querySelector('.classic-button');
-var difficultBtn = document.querySelector('.difficult-button');
+var classicFighterBtns = document.querySelector('.classic-fighter-buttons');
+var difficultFighterBtns = document.querySelector('.difficult-fighter-buttons');
+var classicGameBtn = document.querySelector('.classic-button');
+var difficultGameBtn = document.querySelector('.difficult-button');
 
 // EVENT LISTENERS //
-classicBtn.addEventListener('click', showChooseFighterClassic);
-// difficultBtn.addEventListener('click', showChooseFighterDifficult);
+classicGameBtn.addEventListener('click', showChooseFighterClassic);
+difficultGameBtn.addEventListener('click', showChooseFighterDifficult);
 
 // FUNCTIONS //
 function show(element) {
@@ -19,5 +20,11 @@ element.classList.add('hidden');
 
 function showChooseFighterClassic() {
   hide(gameSelectionView);
-  show(fighterBtns);
+  show(classicFighterBtns);
+}
+
+function showChooseFighterDifficult() {
+  hide(gameSelectionView);
+  show(classicFighterBtns);
+  show(difficultFighterBtns);
 }
