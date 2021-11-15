@@ -3,6 +3,7 @@ class Player {
     this.name = name;
     this.token = token;
     this.wins = 0;
+    this.iconChoice = '';
   }
 
   saveWinsToStorage() {
@@ -14,6 +15,6 @@ class Player {
   }
 
   takeTurn() {
-    
+    this.iconChoice = Math.floor(Math.random() * 3);
   }
 }
