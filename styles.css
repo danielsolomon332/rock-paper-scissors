@@ -123,24 +123,33 @@
 
 .middle-section-bottom-fighter {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.fighter-buttons {
-  margin-top: 150px;
+.classic-fighter-buttons {
+  margin-top: 100px;
+}
+
+.difficult-fighter-buttons {
+  margin-top: 20px;
 }
 
 .rock-button,
 .paper-button,
-.scissors-button {
+.scissors-button,
+.lizard-button,
+.alien-button {
   border: 0px;
   background-color: transparent;
 }
 
 .rock-pic,
 .paper-pic,
-.scissor-pic {
+.scissor-pic,
+.lizard-pic,
+.alien-pic {
   width: 180px;
   height: 180px;
 }
