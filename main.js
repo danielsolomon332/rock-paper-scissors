@@ -11,8 +11,10 @@ var paperBtn = document.querySelector('.paper-button');
 var scissorsBtn = document.querySelector('.scissors-button');
 var lizardBtn = document.querySelector('.lizard-button');
 var alienBtn = document.querySelector('.alien-button');
+var changeGameBtn = document.querySelector('.change-game-button')
 var humanWins = document.querySelector('.human-wins')
 var computerWins = document.querySelector('.computer-wins')
+var changeLowerTitle = document.querySelector('.choose-your-game-title')
 
 var classic;
 var difficult;
@@ -26,6 +28,7 @@ paperBtn.addEventListener('click', checkIcon)
 scissorsBtn.addEventListener('click', checkIcon)
 lizardBtn.addEventListener('click', checkIcon)
 alienBtn.addEventListener('click', checkIcon)
+changeGameBtn.addEventListener('click', showOriginalGameOptions)
 
 // FUNCTIONS //
 function show(element) {
@@ -41,6 +44,7 @@ function showChooseFighterClassic(event) {
   newGame.chooseGame = classic;
   hide(gameSelectionView);
   show(classicFighterBtns);
+  changeLowerTitle.innerText = `Choose your fighter!`
 }
 
 function showChooseFighterDifficult() {
@@ -49,6 +53,14 @@ function showChooseFighterDifficult() {
   hide(gameSelectionView);
   show(classicFighterBtns);
   show(difficultFighterBtns);
+  changeLowerTitle.innerText = `Choose your fighter!`
+}
+
+function showOriginalGameOptions() {
+  show(gameSelectionView);
+  hide(classicFighterBtns);
+  hide(difficultFighterBtns);
+  hide(changeGameBtn);
 }
 
 function displayTotalWins() {
@@ -75,4 +87,5 @@ function checkIcon(event) {
   newGame.chooseGameLogic();
   newGame.saveGameWins();
   displayTotalWins();
+  show(changeGameBtn)
 }
