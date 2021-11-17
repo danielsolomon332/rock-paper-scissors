@@ -12,142 +12,107 @@ class Game {
     } else if (this.chooseGame === "difficultButton") {
         this.difficultGameLogic();
     }
-    console.log(this.chooseGame)
   }
 
   classicGameLogic() {
     if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 0) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     } else if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 1) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 2) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 0) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 1) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 2) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 0) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 1) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 2) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     }
   }
 
   difficultGameLogic() {
     if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 0) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     } else if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 1) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 2) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 3) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "rock-pic" && this.computerPlayer.iconChoice === 4) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 0) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 1) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 2) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 3) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "paper-pic" && this.computerPlayer.iconChoice === 4) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 0) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 1) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 2) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 3) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "scissor-pic" && this.computerPlayer.iconChoice === 4) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "lizard-pic" && this.computerPlayer.iconChoice === 0) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "lizard-pic" && this.computerPlayer.iconChoice === 1) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "lizard-pic" && this.computerPlayer.iconChoice === 2) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "lizard-pic" && this.computerPlayer.iconChoice === 3) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     } else if (this.humanPlayer.iconChoice === "lizard-pic" && this.computerPlayer.iconChoice === 4) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "alien-pic" && this.computerPlayer.iconChoice === 0) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "alien-pic" && this.computerPlayer.iconChoice === 1) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "alien-pic" && this.computerPlayer.iconChoice === 2) {
-      this.humanPlayer.wins +=1
-      this.winner = "human"
-      console.log("You win")
+      this.humanPlayer.wins +=1;
+      this.winner = "human";
     } else if (this.humanPlayer.iconChoice === "alien-pic" && this.computerPlayer.iconChoice === 3) {
-      this.computerPlayer.wins +=1
-      this.winner = "computer"
-      console.log("You lose")
+      this.computerPlayer.wins +=1;
+      this.winner = "computer";
     } else if (this.humanPlayer.iconChoice === "alien-pic" && this.computerPlayer.iconChoice === 4) {
-      this.winner = "tie"
-      console.log("You tie")
+      this.winner = "tie";
     }
   }
 

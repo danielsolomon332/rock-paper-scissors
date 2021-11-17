@@ -1,7 +1,6 @@
 class Player {
-  constructor(name, token) {
+  constructor(name) {
     this.name = name;
-    this.token = token;
     this.wins = 0;
     this.iconChoice = '';
   }
@@ -24,6 +23,5 @@ class Player {
     } else if (newGame.chooseGame === "difficultButton") {
       this.iconChoice = Math.floor(Math.random() * 5);
     }
-    console.log(this.iconChoice)
   }
 }
