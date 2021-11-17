@@ -23,21 +23,21 @@ My app allows the user to play the game: Rock/Paper/Scissors. This includes a cl
 ## How To Use
 
 1. When you open the app you will see a home screen that displays the primary sections: human(where the human wins are counted), computer(where the computer wins are counted), and the middle game selection section(where you will choose your game type).
-[](<img width="1437" alt="Screen Shot 2021-11-16 at 8 08 28 PM" src="https://user-images.githubusercontent.com/90291724/142127615-7106f915-a052-46c1-b8fd-7c5062f3b61e.png">)
+![2021-11-16 at 8 08 28 PM](https://user-images.githubusercontent.com/90291724/142127615-7106f915-a052-46c1-b8fd-7c5062f3b61e.png)
 
 2. If the "Classic" game button is clicked, the Rock/Paper/Scissors fighter options will now appear in the middle section to be chosen from for the game by the user.
-[](<img width="1436" alt="Screen Shot 2021-11-16 at 8 14 00 PM" src="https://user-images.githubusercontent.com/90291724/142128044-7499c3b5-df06-4763-b10c-8a86f86cb60f.png">)
+![2021-11-16 at 8 14 00 PM](https://user-images.githubusercontent.com/90291724/142128044-7499c3b5-df06-4763-b10c-8a86f86cb60f.png)
 
 3. If the "Difficult" game button is clicked, the Rock/Paper/Scissors/Lizard/Alien fighter options will now appear in the middle section to be chosen from for the game by the user.
-[](<img width="1438" alt="Screen Shot 2021-11-16 at 8 15 21 PM" src="https://user-images.githubusercontent.com/90291724/142128147-02e7a659-23cc-42c6-a33e-f2fb48513f0b.png">)
+![2021-11-16 at 8 15 21 PM](https://user-images.githubusercontent.com/90291724/142128147-02e7a659-23cc-42c6-a33e-f2fb48513f0b.png)
 
 4. Once the user clicks one of the fighter images, a brief matchup view will occur. This will show the image chosen by the user on the left and the randomly generated computer fighter image on the right. This matchup view will also exclaim the winner at the top of the page. Don't blink, or else you might miss the win, lose, or tie message at the top! Lastly, either the Human or Computer win total will be increased depending on the outcome (or a tie will keep the win totals the same as they were).
-[](<img width="1436" alt="Screen Shot 2021-11-16 at 8 23 13 PM" src="https://user-images.githubusercontent.com/90291724/142129209-d1cf5779-6f32-40a9-8fdf-2d2d59df88d3.png">)
+![2021-11-16 at 8 23 13 PM](https://user-images.githubusercontent.com/90291724/142129209-d1cf5779-6f32-40a9-8fdf-2d2d59df88d3.png)
 
-[](<img width="1438" alt="Screen Shot 2021-11-16 at 8 27 56 PM" src="https://user-images.githubusercontent.com/90291724/142129421-063e7b2b-5b13-4559-96e3-777fa23094b3.png">)
+![2021-11-16 at 8 27 56 PM](https://user-images.githubusercontent.com/90291724/142129421-063e7b2b-5b13-4559-96e3-777fa23094b3.png)
 
 5. After one or more games are played, a "CHANGE GAME?" button will appear on the left side of the page. If the user clicks this button, it will take them back to the home screen, in case they want to change game types.
-[](<img width="1437" alt="Screen Shot 2021-11-16 at 8 23 41 PM" src="https://user-images.githubusercontent.com/90291724/142129716-5bdb9b29-7984-41cb-aac0-d984d2cef7c4.png">)
+![2021-11-16 at 8 23 41 PM](https://user-images.githubusercontent.com/90291724/142129716-5bdb9b29-7984-41cb-aac0-d984d2cef7c4.png)
 
 6. Please have fun playing this game and make sure to try all of the different fighter options!
 
