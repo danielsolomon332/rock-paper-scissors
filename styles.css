@@ -71,6 +71,11 @@
   background-color: #AE4ECE;
 }
 
+.classic-button:hover,
+.difficult-button:hover {
+  background-color: #DA88F5;
+}
+
 .difficult-button {
   margin-top: 50px;
 }
@@ -152,4 +157,8 @@
 .alien-pic {
   width: 180px;
   height: 180px;
+}
+
+.results-view {
+  margin-top: 100px;
 }
