@@ -2,6 +2,8 @@ var newGame = new Game();
 
 // QUERY SELECTORS //
 var gameSelectionView = document.querySelector('.middle-section-bottom-start');
+var fightView = document.querySelector('.middle-section-bottom-fighter');
+var resultsView = document.querySelector('.results-view');
 var classicFighterBtns = document.querySelector('.classic-fighter-buttons');
 var difficultFighterBtns = document.querySelector('.difficult-fighter-buttons');
 var classicGameBtn = document.querySelector('.classic-button');
@@ -11,6 +13,16 @@ var paperBtn = document.querySelector('.paper-button');
 var scissorsBtn = document.querySelector('.scissors-button');
 var lizardBtn = document.querySelector('.lizard-button');
 var alienBtn = document.querySelector('.alien-button');
+var humanRockPic = document.querySelector('#humanRock');
+var humanPaperPic = document.querySelector('#humanPaper');
+var humanScissorsPic = document.querySelector('#humanScissor');
+var humanLizardPic = document.querySelector('#humanLizard');
+var humanAlienPic = document.querySelector('#humanAlien');
+var computerRockPic = document.querySelector('#computerRock');
+var computerPaperPic = document.querySelector('#computerPaper');
+var computerScissorsPic = document.querySelector('#computerScissor');
+var computerLizardPic = document.querySelector('#computerLizard');
+var computerAlienPic = document.querySelector('#computerAlien');
 var changeGameBtn = document.querySelector('.change-game-button')
 var humanWins = document.querySelector('.human-wins')
 var computerWins = document.querySelector('.computer-wins')
@@ -29,6 +41,7 @@ scissorsBtn.addEventListener('click', checkIcon)
 lizardBtn.addEventListener('click', checkIcon)
 alienBtn.addEventListener('click', checkIcon)
 changeGameBtn.addEventListener('click', showOriginalGameOptions)
+// fightView.addEventListener('click', showFight)
 
 // FUNCTIONS //
 function show(element) {
@@ -39,7 +52,7 @@ function hide(element) {
 element.classList.add('hidden');
 };
 
-function showChooseFighterClassic(event) {
+function showChooseFighterClassic() {
   classic = event.target.id;
   newGame.chooseGame = classic;
   hide(gameSelectionView);
@@ -61,6 +74,69 @@ function showOriginalGameOptions() {
   hide(classicFighterBtns);
   hide(difficultFighterBtns);
   hide(changeGameBtn);
+  hide(fightView);
+  hide(resultsView);
+  changeLowerTitle.innerText = `Choose your game!`
+}
+
+function showFight() {
+  hide(gameSelectionView);
+  hide(classicFighterBtns);
+  hide(difficultFighterBtns);
+  show(resultsView)
+  if (newGame.humanPlayer.iconChoice === "rock-pic") {
+    show(humanRockPic)
+  }
+  if (newGame.humanPlayer.iconChoice === "paper-pic") {
+    show(humanPaperPic)
+  }
+  if (newGame.humanPlayer.iconChoice === "scissor-pic") {
+    show(humanScissorsPic)
+  }
+  if (newGame.humanPlayer.iconChoice === "lizard-pic") {
+    show(humanLizardPic)
+  }
+  if (newGame.humanPlayer.iconChoice === "alien-pic") {
+    show(humanAlienPic)
+  }
+  if (newGame.computerPlayer.iconChoice === 0) {
+    show(computerRockPic)
+  }
+  if (newGame.computerPlayer.iconChoice === 1) {
+    show(computerPaperPic)
+  }
+  if (newGame.computerPlayer.iconChoice === 2) {
+    show(computerScissorsPic)
+  }
+  if (newGame.computerPlayer.iconChoice === 3) {
+    show(computerLizardPic)
+  }
+  if (newGame.computerPlayer.iconChoice === 4) {
+    show(computerAlienPic)
+  }
+}
+
+function displayWinner() {
+  if (newGame.winner === "human") {
+    changeLowerTitle.innerText = `Human Wins!`
+  } else if (newGame.winner === "computer") {
+    changeLowerTitle.innerText = `Computer Wins!`
+  } else {
+    changeLowerTitle.innerText = `It's a Tie!`
+  }
+}
+
+function hideResults() {
+  hide(humanRockPic);
+  hide(humanPaperPic);
+  hide(humanScissorsPic);
+  hide(humanLizardPic);
+  hide(humanAlienPic);
+  hide(computerRockPic);
+  hide(computerPaperPic);
+  hide(computerScissorsPic);
+  hide(computerLizardPic);
+  hide(computerAlienPic);
 }
 
 function displayTotalWins() {
@@ -87,5 +163,20 @@ function checkIcon(event) {
   newGame.chooseGameLogic();
   newGame.saveGameWins();
   displayTotalWins();
-  show(changeGameBtn)
+  showFight();
+  displayWinner();
+  hide(changeGameBtn);
+  setTimeout(function() {
+  hide(resultsView)
+  hideResults();
+  changeLowerTitle.innerText = `Choose your fighter!`
+  if (newGame.chooseGame === "classicButton") {
+    show(classicFighterBtns)
+    show(changeGameBtn)
+  } else if (newGame.chooseGame === "difficultButton") {
+    show(classicFighterBtns)
+    show(difficultFighterBtns)
+    show(changeGameBtn)
+  }
+}, 1000);
 }
