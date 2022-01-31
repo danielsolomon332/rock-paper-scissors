@@ -117,7 +117,7 @@ function showFight() {
 
 function displayWinner() {
   if (newGame.winner === "human") {
-    changeLowerTitle.innerText = `Human Wins!`;
+    changeLowerTitle.innerText = `Oh you made it! You won against AI!`;
   } else if (newGame.winner === "computer") {
     changeLowerTitle.innerText = `Computer Wins!`;
   } else {
